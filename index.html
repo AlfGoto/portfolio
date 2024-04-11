@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfred Gauthier</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png">
+    <script src='script.js'></script>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <label class="switch">
+                <input type="checkbox" id="switch">
+                <span class="slider round"></span>
+            </label>
+        </h1>
+        <nav>
+            <a href="#ME">About Me</a>
+            <a href="#Works">Works</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+    </header>
+    <section id='ME'>
+        <div id='ME1DIV'>
+            <img src="img/Alf1.jpg" alt="Photo de Alfred Gauthier souriant dans les montagnes" />
+            <div>
+                <h1>Alfred Gauthier</h1>
+                <p>Développeur Web</p>
+                <p id='bio'>Etudiant en développement web, je me passionne à l'apprentissage des technologies du web et
+                    à la conceptions de systemes informatiques.</p>
+            </div>
+        </div>
+        <div id="ME2DIV">
+            <div class="square" id="student">
+                <img src="icones/prof.png" alt="une icone simplifié d'un professeur" />
+                <p>Web@cademy</p>
+                <p>Epitech</p>
+            </div>
+            <div class="square" id="lang">
+                <p>MERN</p>
+                <p>JS</p>
+                <p>PHP</p>
+                <p>CSS</p>
+                <p>MySQL</p>
+                <p>Three.js</p>
+                <p>JS</p>
+                <p>Socket.io</p>
+            </div>
+            <div class="square">
+                <img src="icones/hobbie.png" alt="icone representant plusieurs passions/centres d'interets"/>
+                <p>PhotoShop</p>
+                <p>OBS</p>
+                <a target='_blank' href='https://twitch.tv/alfgoto'>Twitch</a>
+                <a href='https://www.instagram.com/alfffoto/' target='_blank'>Photo</a>
+            </div>
+            <div class="square">
+                <p>En recherche <br />d'Alternance</p>
+            </div>
+            <div class="square">
+                <p>Français</p>
+                <p>Anglais</p>
+            </div>
+            <div class="square">
+                <a href="img/CV_Alfred_Gauthier.pdf" 
+                download>Téléchargez <br/> mon CV !</a>
+            </div>
+            <!-- <ul>
+                <li>En formation à la Web@cademy d'Epitech</li>
+                <li>De par ma formation et mes projets personnels je maitrise le stack MERN ainsi que PHP, MySQL et
+                    CSS.<br>J'ai également de l'experience avec Three.js et Ratchet</li>
+                <li>Hormis le code j'ai de solides maitrises de Photoshop, d'OBS, de <a target='_blank'
+                        href='https://twitch.tv/alfgoto'>Twitch</a>, et de <a href='https://www.instagram.com/alfffoto/'
+                        target='_blank'>Photographie</a></li>
+                <li>Je suis actuellement en recherche d'une Alternance</li>
+                <li>Je maitrise le français et l'anglais</li>
+                <li><a href="img/CV_Alfred_Gauthier.pdf" download>Téléchargez mon CV</a></li>
+            </ul> -->
+        </div>
+    </section>
+    <section id='Works'>
+        <h1 id='worksh1'>Works</h1>
+    </section>
+    <section id='Contact'>
+        <div id="coordonnées">
+            <h1>Mes coordonnées :</h1>
+            <ul>
+                <li><a href="https://fr.linkedin.com/in/alfred-gauthier-9a91b919b" target="_blank">Mon linkedin</a></li>
+                <li>alfredgauthier@free.fr</li>
+            </ul>
+        </div>
+        <form action="https://submit-form.com/ER22eUFzQ">
+            <h1>Vous pouvez aussi me contacter via ce formulaire !</h1>
+            <input type="text" id="name" name="name" placeholder="Name" required="" />
+            <input type="email" id="email" name="email" placeholder="Email" required="" />
+            <textarea id="message" name="message" placeholder="Message" required=""></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+
+</html>
