@@ -427,6 +427,9 @@ body {
         align-items: center;
         padding: 2svw;
 
+        &>div{
+            background-color: var(--background);
+        }
         div {
             padding: 1svw;
             width: 50svw;
@@ -445,8 +448,22 @@ body {
             flex-direction: column;
             gap: 1svw;
             padding: 1svw;
+
         }
     }
+}
+textarea:focus, input:focus {
+    background-color: var(--background);
+    border: solid var(--font1) .2svw;
+    border-radius: 1svw;
+    padding: .3svw;
+}
+
+input, select, textarea{
+    background-color: var(--background);
+    border: solid var(--font1) .2svw;
+    border-radius: 1svw;
+    padding: .3svw;
 }
 
 
@@ -557,6 +574,7 @@ body {
             /* grid-auto-rows: minmax(100px, auto); */
 
             .projetDiv {
+                margin-bottom: 10svw;
                 width: 95svw;
                 /* padding: 2svw; */
 

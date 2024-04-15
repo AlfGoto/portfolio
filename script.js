@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let projects = [
         new projet(
             'Minesweeper',
-            "Ceci est mon premier site Web, je l'ai fait pour apprendre toutes les bases. <br>Il s'agit d'un jeu de démineur réalisé notamment à l'aide de websockets pour les joueurs les plus rapides. J'ai eu l'occasion de refaire ce site en utilisant le stack MERN",
+            "Ceci est mon premier site Web, je l'ai fait pour apprendre toutes les bases. <br>Il s'agit d'un démineur réalisé notamment à l'aide de websockets pour les joueurs les plus rapides. Il y a tout un systeme de suivis des statistiques et des classements des meilleurs joueurs et des meilleurs temps. J'ai eu l'occasion de refaire ce site en utilisant le stack MERN et j'ai aussi développé une version client uniquement",
             ['PHP', 'Javascript', 'MySQL', 'Ratchet', 'CSS'],
             ['minesweeper1.png', 'minesweeper2.png', 'minesweeper3.png'],
             'https://minesweeper.fr',
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ),
         new projet(
             'Portfolio',
-            "Je voulais utiliser ce portfolio comme excuse pour montrer quelque chose d'intéressant. <br>J'ai donc créé mon portfolio en utilisant la perspective Vanilla CSS et du JS Vanilla pour parcourir les projets. Vous pouvez voir tous mes projets en cliquant sur les cubes. N'hésitez pas à voir les vidéos en plein écran !",
+            "Je voulais utiliser ce portfolio comme excuse pour montrer quelque chose d'intéressant. <br>J'ai donc créé ce portfolio en utilisant la perspective de CSS vanilla et du JS vanilla pour parcourir les projets. Vous pouvez voir tous mes projets en cliquant sur les cubes. N'hésitez pas à voir les vidéos en plein écran !",
             ['CSS'],
             ['portfolio3D1.png', 'portfolio3D2.png'],
             'https://alfolio.netlify.app/'
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ),
         new projet(
             'fenetreS',
-            "C'est un petit projet réalisé juste pour voir si c'était possible. <br>Le concept ici est de connecter des scripts de plusieurs navigateurs et fenêtres pour les faire agir ensemble<br>C'était amusant à faire et l'effet est vraiment cool. <br>Cela pourrait être utile plus tard !",
+            "Ce projet est un petit projet réalisé juste pour voir si ce concept était possible. <br>Le concept ici était de connecter des scripts de plusieurs navigateurs et fenêtres pour les faire agir ensemble<br>C'était amusant à faire et l'effet est vraiment cool. <br>Cela pourrait être utile plus tard !",
             ['JS', 'CSS'],
             ['FenetreS1.png', 'FenetreS2.png', 'FenetreS3.png'],
             '',
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ),
         new projet(
             'Paragraph',
-            "Celui-ci était un projet amusant que j'ai réalisé au cours de mon deuxième mois d'apprentissage du code. <br>C'est un jeu de tir avec la mécanique RogueLikes. <br>Je voulais voir ce qui était possible avec le peu de connaissances que j'avais à l'époque. Cela m'a beaucoup aidé à améliorer mes compétences en animation et j'ai beaucoup appris sur la logique algorithmique. <br>Il y a plusieurs salles, plusieurs armes, plusieurs ennemis et plusieurs niveaux de récompenses offrant des jeux uniques",
+            "Ce projet était amusant, je l'ai réalisé au cours de mon deuxième mois d'apprentissage du dev web. <br>C'est un jeu de tir RogueLike. <br>Je voulais voir ce qui était possible avec le peu de connaissances que j'avais à l'époque. Cela m'a beaucoup aidé à améliorer mes compétences en animation et j'ai beaucoup appris sur la logique algorithmique. <br>Il y a plusieurs salles, plusieurs armes, plusieurs ennemis et plusieurs niveaux de récompenses offrant des jeux uniques",
             ['JS', 'CSS'],
             ['paragraph1.png', 'paragraph2.png', 'paragraph3.png', 'paragraph4.png'],
             '',
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ),
         new projet(
             'Pokemon',
-            "Ce projet est une petite tentative d'améliorer le projet précédent Paragraph. <br>J'ai réalisé un jeu de type Pokémon pour en savoir plus sur la hitbox et utiliser MYSQL de manière ludique. <br>Dans ce micro-jeu, vous pouvez avoir différents Pokémon et commencer des scènes de combat. Vous avez également accès à plusieurs cartes.",
+            "Ce projet est une petite tentative d'améliorer le projet précédent Paragraph. <br>C'est un Pokémon, j'ai fais ce projet pour réussir à coder des hitbox et utiliser MYSQL de manière ludique. <br>Dans ce micro-jeu, vous pouvez avoir différents Pokémon et commencer des scènes de combat. Vous avez également accès à plusieurs cartes.",
             ['CSS', 'JS'],
             ['pokemon1.png', 'pokemon2.png', 'pokemon3.png'],
             '',
@@ -156,7 +156,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ),
         new projet(
             'textMaker',
-            "Ce projet est mon premier travail ! <br>Il a été conçu pour une graphiste qui avait besoin d'une application Web où elle pourrait facilement utiliser une police et donner un lien à ses clients afin qu'ils puissent l'utiliser pour leurs projets graphiques. J'ai massivement utilisé l'image GD",
+            "Ce projet est ma première prestation ! <br>Il à été conçu pour une graphiste qui avait besoin d'une application Web où elle pourrait facilement utiliser une police et donner un lien à ses clients afin qu'ils puissent l'utiliser pour leurs projets graphiques. J'ai massivement utilisé la librairie PHP GD",
             ['PHP', 'JS', 'CSS', 'GDimage'],
             ['textMaker1.png', 'textMaker2.png', 'textMaker3.png'],
             '',
@@ -212,5 +212,17 @@ document.addEventListener('DOMContentLoaded', () => {
             document.documentElement.style.setProperty('--green1','#e7faea')
         }
     })
+
+
+    setInterval(()=>{
+        document.getElementById('sujetMail').value = document.getElementById('sujet').value + ' | ' + document.getElementById('email').value
+    }, 500)
+
+
+
+
+
+
+    
 })
 

@@ -51,8 +51,8 @@
                 <p>Socket.io</p>
             </div>
             <div class="square">
-                <img src="icones/hobbie.png" alt="icone representant plusieurs passions/centres d'interets" />
-                <p>PhotoShop</p>
+                <img src="icones/hobbie.png" alt="icone representant plusieurs passions/centres d'interets"/>
+                <p>Photoshop</p>
                 <p>OBS</p>
                 <a target='_blank' href='https://twitch.tv/alfgoto'>Twitch</a>
                 <a href='https://www.instagram.com/alfffoto/' target='_blank'>Photo</a>
@@ -65,19 +65,9 @@
                 <p>Anglais</p>
             </div>
             <div class="square">
-                <a href="img/CV_Alfred_Gauthier.pdf" download>Téléchargez <br /> mon CV !</a>
+                <a href="img/CV_Alfred_Gauthier.pdf" 
+                download>Téléchargez <br/> mon CV !</a>
             </div>
-            <!-- <ul>
-                <li>En formation à la Web@cademy d'Epitech</li>
-                <li>De par ma formation et mes projets personnels je maitrise le stack MERN ainsi que PHP, MySQL et
-                    CSS.<br>J'ai également de l'experience avec Three.js et Ratchet</li>
-                <li>Hormis le code j'ai de solides maitrises de Photoshop, d'OBS, de <a target='_blank'
-                        href='https://twitch.tv/alfgoto'>Twitch</a>, et de <a href='https://www.instagram.com/alfffoto/'
-                        target='_blank'>Photographie</a></li>
-                <li>Je suis actuellement en recherche d'une Alternance</li>
-                <li>Je maitrise le français et l'anglais</li>
-                <li><a href="img/CV_Alfred_Gauthier.pdf" download>Téléchargez mon CV</a></li>
-            </ul> -->
         </div>
     </section>
     <section id='Works'>
@@ -93,10 +83,16 @@
         </div>
         <form action="https://submit-form.com/ER22eUFzQ">
             <h1>Vous pouvez aussi me contacter via ce formulaire !</h1>
-            <input type="text" id="name" name="name" placeholder="Name" required="" />
+            <input type="text" id="sujet" name="sujet" placeholder="Sujet" required/>
+
+            <input type="hidden" name="_email.subject" value="" id="sujetMail">
+
             <input type="email" id="email" name="email" placeholder="Email" required="" />
             <textarea id="message" name="message" placeholder="Message" required=""></textarea>
             <input type="hidden" name="_redirect" value="https://alfredgauthier.netlify.app/" />
+            <input type="hidden" name="_email.template.title" value="false" />
+            <input type="hidden" name="_email.template.footer" value="false" />
+
             <button type="submit">Send</button>
         </form>
     </section>
