@@ -458,15 +458,12 @@ textarea:focus, input:focus {
     border-radius: 1svw;
     padding: .3svw;
 }
-
 input, select, textarea{
     background-color: var(--background);
     border: solid var(--font1) .2svw;
     border-radius: 1svw;
     padding: .3svw;
 }
-
-
 
 
 
